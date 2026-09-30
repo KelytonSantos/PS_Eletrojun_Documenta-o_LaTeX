@@ -1,0 +1,64 @@
+% ============================================================================
+% edicao.tex
+% ----------------------------------------------------------------------------
+% Este é o arquivo que você deve editar A CADA NOVO DOCUMENTO/RELATÓRIO.
+% Aqui ficam as informações que mudam de um relatório para outro:
+% título, subtítulo, nome do cliente, nome do projeto, equipe, e as opções
+% de exibição do rodapé.
+%
+% Diferente de "config.tex" (que guarda dados fixos da empresa), este
+% arquivo guarda dados VARIÁVEIS de cada edição/versão do documento.
+% ============================================================================
+
+% --------------------------------------------------------------
+% ONDE FICA A NUMERAÇÃO DA PÁGINA
+% -------------------------------------------------------------- 
+% Comente a linha que não for usar e descomente a que for utilizar.
+% \NumeracaoRodapetrue  -> mostra o número da página no RODAPÉ
+% \NumeracaoRodapefalse -> mostra o número da página no CABEÇALHO
+
+% \NumeracaoRodapetrue
+\NumeracaoRodapefalse
+
+
+% --------------------------------------------------------------
+% TEXTO NO RODAPÉ
+% -------------------------------------------------------------- 
+% Comente a linha que não for usar e descomente a que for utilizar.
+% \CNPJnoRodapetrue  -> mostra o CNPJ da empresa no rodapé
+% \CNPJnoRodapefalse -> NÃO mostra o CNPJ no rodapé
+
+% \CNPJnoRodapetrue
+\CNPJnoRodapefalse
+
+
+% --------------------------------------------------------------
+% EMAIL EXIBIDO NO RODAPÉ
+% -------------------------------------------------------------- 
+% Descomente apenas a linha do setor responsável pelo documento.
+
+\newcommand{\emailEmpresa}{contato@eletronjun.com.br}
+% \newcommand{\emailEmpresa}{projetos@eletronjun.com.br}
+% \newcommand{\emailEmpresa}{marketing@eletronjun.com.br}
+% \newcommand{\emailEmpresa}{gdp@eletronjun.com.br}
+% \newcommand{\emailEmpresa}{operacoes@eletronjun.com.br}
+% \newcommand{\emailEmpresa}{presidencia@eletronjun.com.br}
+% \newcommand{\emailEmpresa}{relacionamentos@eletronjun.com.br}
+% \newcommand{\emailEmpresa}{comercial@eletronjun.com.br} 
+% \newcommand{\emailEmpresa}{comissaoeleitoral@eletronjun.com.br}
+
+
+% --------------------------------------------------------------
+% NOME DO PROJETO, CLIENTE, GERENTE E EQUIPE TÉCNICA
+% -------------------------------------------------------------- 
+\newcommand{\nomeProjeto}{Sistema de Monitoramento Ambiental}   % nome do projeto entregue
+\newcommand{\nomeCliente}{Eletronjun}   % nome da empresa/cliente atendido
+
+\newcommand{\gerenteProjeto}{João Gabryel da Silva Costa}    % responsável pelo projeto
+\newcommand{\equipeTecnica}{Laíz Helena, Ana Clara Patrício, Kelyton de Lucas, Pedro Henrick} % nomes da equipe técnica (separados por vírgula)
+
+% --------------------------------------------------------------
+% TÍTULO E SUBTÍTULO DO DOCUMENTO
+% -------------------------------------------------------------- 
+\newcommand{\tituloDocumento}{Documentação Técnica — Projeto Leitor de Temperatura}
+\newcommand{\subtituloDocumento}{Processo Seletivo Eletronjun 2026.2}

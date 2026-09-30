@@ -1,0 +1,59 @@
+% ====================================================================
+% DESCRICAO-ALTO-NIVEL.TEX — Seção 4: Descrição de Alto Nível
+% ====================================================================
+
+\section{Descrição de Alto Nível}
+
+\subsection{Visão Geral do Sistema}
+
+O sistema de monitoramento ambiental é composto por um \textbf{microcontrolador ESP32-WROOM-32U}
+que atua como núcleo central, integrando a leitura de dados ambientais, a comunicação
+em rede e o controle dos atuadores (LEDs).
+
+O fluxo geral de operação é o seguinte:
+
+\begin{enumerate}
+    \item O \textbf{sensor DHT11} coleta periodicamente dados de temperatura e umidade
+    do ambiente e os envia ao ESP32 via protocolo digital single-wire.
+
+    \item O \textbf{ESP32} processa os dados recebidos e os disponibiliza em uma
+    \textbf{interface web} acessível em tempo real via Wi-Fi, sem necessidade de
+    recarregar a página (atualização dinâmica).
+
+    \item O usuário acessa a interface web e pode \textbf{alternar entre os modos de
+    operação} (Desligado, Ligado e Automático) por meio de botões na página.
+
+    \item Ao mudar o modo, o ESP32 aciona os \textbf{LEDs indicadores} (LED1, LED2 e LED3)
+    para refletir visualmente o estado ativo do sistema.
+
+    \item O \textbf{módulo MB102} fornece a alimentação regulada (3,3 V / 5 V) para
+    todos os componentes do circuito.
+\end{enumerate}
+
+
+% --------------------------------------------------------------------
+\subsection{Modos de Operação}
+% --------------------------------------------------------------------
+
+O sistema opera em três modos distintos, selecionáveis pelo usuário via interface web:
+
+\begin{itemize}
+    \item \textbf{Modo Desligado:} o sensor DHT11 e o sistema de coleta são desativados.
+    O LED3 acende para indicar o estado inativo. Nenhum dado é coletado ou exibido.
+
+    \item \textbf{Modo Ligado:} o sistema opera normalmente, aguardando ação do usuário
+    para realizar e exibir leituras. O LED1 acende para indicar este modo.
+
+    \item \textbf{Modo Automático:} o ESP32 realiza leituras contínuas e automáticas
+    do DHT11, atualizando a interface web em tempo real sem intervenção do usuário.
+    O LED2 acende para indicar este modo.
+\end{itemize}
+
+% --------------------------------------------------------------------
+% NOTA: Dado o escopo reduzido e bem definido do projeto, não foi
+% identificada a necessidade de divisão em subsistemas formais.
+% O sistema é suficientemente simples para ser descrito como um
+% bloco único com três periféricos (sensor, LEDs e interface web).
+% Caso o projeto evolua (app mobile, log local, alertas por e-mail),
+% considere decompor em subsistemas de hardware, firmware e frontend.
+% --------------------------------------------------------------------

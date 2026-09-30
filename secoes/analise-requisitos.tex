@@ -1,0 +1,91 @@
+% ====================================================================
+% ANALISE-REQUISITOS.TEX — Seção 2: Análise de Requisitos
+% ====================================================================
+
+\section{Análise de Requisitos}
+
+Esta seção apresenta os requisitos levantados a partir da descrição do projeto fornecida
+pelo cliente, organizados em requisitos funcionais e não funcionais.
+
+% --------------------------------------------------------------------
+\subsection{Requisitos Funcionais}
+% --------------------------------------------------------------------
+% Requisitos funcionais descrevem O QUE o sistema deve fazer.
+
+Os requisitos funcionais definem os comportamentos e funcionalidades que o sistema
+deve apresentar.
+
+\subsubsection{Requisitos de Prioridade 1 (Entrega na Etapa de Protótipo)}
+
+\begin{itemize}
+    \item \textbf{RF01 — Leitura de temperatura e umidade:} O sistema deve coletar
+    dados de temperatura e umidade do ambiente por meio de um sensor dedicado.
+
+    \item \textbf{RF02 — Exibição em tempo real:} Os dados coletados devem ser
+    disponibilizados em tempo real na interface web.
+
+    \item \textbf{RF03 — Modo Desligado:} O sistema deve suportar um modo de operação
+    no qual o sensor e o sistema são completamente desativados.
+
+    \item \textbf{RF04 — Modo Ligado:} O sistema deve suportar um modo de operação
+    normal, aguardando ação do usuário para realizar leituras.
+
+    \item \textbf{RF05 — Modo Automático:} O sistema deve suportar um modo de operação
+    no qual a coleta e exibição dos dados ocorrem de forma contínua e automática, sem
+    intervenção do usuário.
+
+    \item \textbf{RF06 — Alternância de modos pela interface web:} A interface web deve
+    disponibilizar botões para que o usuário alterne entre os três modos de operação
+    (Desligado, Ligado e Automático).
+
+    \item \textbf{RF07 — Indicação visual por LEDs:} O hardware deve contar com LEDs
+    indicadores que reflitam o modo de operação ativo, acendendo ou apagando conforme
+    o estado atual do sistema.
+\end{itemize}
+
+\subsubsection{Requisitos de Prioridade 2 (Extras Opcionais)}
+
+\begin{itemize}
+    \item \textbf{RF08 — Histórico de leituras:} A interface web pode exibir um
+    histórico de leituras com data e hora das medições.
+
+    \item \textbf{RF09 — Alertas automáticos:} O sistema pode emitir alertas
+    automáticos na interface web quando os valores de temperatura ou umidade
+    ultrapassarem limites pré-definidos.
+
+    \item \textbf{RF10 — Notificação por e-mail:} O sistema pode enviar notificações
+    por e-mail ao usuário quando os valores monitorados ultrapassarem os limites
+    configurados.
+
+    \item \textbf{RF11 — Log local:} O sistema pode armazenar os logs de leituras em
+    arquivo \texttt{.txt}, garantindo persistência de dados localmente.
+
+    \item \textbf{RF12 — Aplicativo mobile:} O sistema pode disponibilizar um aplicativo
+    mobile (Android e/ou iOS) como alternativa à interface web para monitoramento e
+    controle do sistema.
+\end{itemize}
+
+% --------------------------------------------------------------------
+\subsection{Requisitos Não Funcionais}
+% --------------------------------------------------------------------
+% Requisitos não funcionais descrevem COMO o sistema deve se comportar
+% (desempenho, confiabilidade, usabilidade, restrições técnicas etc.)
+
+Os requisitos não funcionais definem as qualidades e restrições técnicas do sistema.
+
+\begin{itemize}
+    \item \textbf{RNF01 — Comunicação em rede:} O microcontrolador deve ser capaz
+    de se comunicar com a interface web via rede (Wi-Fi ou equivalente).
+
+    \item \textbf{RNF02 — Justificativa técnica de componentes:} A seleção do sensor
+    e do microcontrolador deve ser justificada com base em características técnicas
+    relevantes, tais como faixa de medição, precisão, consumo de energia, facilidade
+    de programação e suporte a comunicação via rede.
+
+    \item \textbf{RNF03 — Atualização em tempo real:} A interface web deve exibir
+    os dados de temperatura e umidade sem necessidade de recarregar a página
+    (atualização dinâmica).
+
+    \item \textbf{RNF04 — Usabilidade:} A interface web deve ser simples e intuitiva,
+    permitindo ao usuário alternar entre os modos de operação sem dificuldade.
+\end{itemize}

@@ -1,0 +1,28 @@
+# Arquivos auxiliares gerados pelo LaTeX
+*.aux
+*.log
+*.toc
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.bbl
+*.blg
+*.lof
+*.lot
+*.idx
+*.ind
+*.ilg
+*.glg
+*.glo
+*.gls
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+*.xdv
+
+# PDF compilado (opcional — comente a linha abaixo se quiser versionar o PDF)
+# main.pdf

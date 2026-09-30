@@ -1,0 +1,39 @@
+% ====================================================================
+% BILL-OF-MATERIALS.TEX — Seção 5: Bill of Materials (BOM)
+% ====================================================================
+
+\section{Bill of Materials}
+
+A tabela a seguir lista todos os componentes eletrônicos necessários para a montagem
+do protótipo, conforme o esquemático do projeto (v1.0, EasyEDA, 2026-09-30).
+
+\begin{table}[H]
+\centering
+\caption{Lista de materiais do protótipo — Monitoramento Ambiental.}
+\label{tab:bom}
+\renewcommand{\arraystretch}{1.4}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|l|l|c|r|r|}
+\hline
+\textbf{Ref.} & \textbf{Componente} & \textbf{Descrição} & \textbf{Qtd.} & \textbf{Unit. (R\$)} & \textbf{Total (R\$)} \\
+\hline
+U1   & ESP32-WROOM-32U       & Microcontrolador Wi-Fi/BT dual-core 240 MHz & 1  & -- & -- \\
+S1   & DHT11                 & Sensor digital de temperatura e umidade     & 1  & -- & -- \\
+U2   & MB102                 & Módulo de alimentação 3,3 V / 5 V          & 1  & -- & -- \\
+LED1 & LED (vermelho)        & LED 5 mm, indicador de modo                & 1  & -- & -- \\
+LED2 & LED (verde)           & LED 5 mm, indicador de modo                & 1  & -- & -- \\
+LED3 & LED (azul/amarelo)    & LED 5 mm, indicador de modo                & 1  & -- & -- \\
+R1   & Resistor 330 $\Omega$ & Limitador de corrente para LED1, 1/4 W     & 1  & -- & -- \\
+R2   & Resistor 330 $\Omega$ & Limitador de corrente para LED2, 1/4 W     & 1  & -- & -- \\
+R3   & Resistor 330 $\Omega$ & Limitador de corrente para LED3, 1/4 W     & 1  & -- & -- \\
+--   & Protoboard 830 pontos & Protoboard comum para montagem do protótipo & 1  & -- & -- \\
+--   & Fonte DC / cabo USB   & Alimentação 6,5–12 V para módulo MB102     & 1  & -- & -- \\
+--   & Fios e jumpers        & Interligação dos componentes na placa       & -- & -- & -- \\
+\hline
+\multicolumn{5}{|r|}{\textbf{Total Geral (R\$)}} & \textbf{--} \\
+\hline
+\end{tabular}%
+}
+\end{table}
+
+\textit{Nota: os valores unitários e total devem ser preenchidos após cotação dos componentes.}
